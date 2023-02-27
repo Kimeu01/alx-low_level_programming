@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <unlstd.h>
 #ifndef MAIN_H
 #define MAIN_H
 
