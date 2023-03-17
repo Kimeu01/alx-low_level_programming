@@ -1,1 +1,1 @@
-hello wordl C
+My first program in C.
