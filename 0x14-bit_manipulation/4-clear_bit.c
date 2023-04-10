@@ -7,18 +7,14 @@
  *
  * Return: 1 if it works, -1 if there is an error
  */
+
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int i;
-	unsigned int hold;
-
-	if (index > 64)
+	if (index >= sizeof(unsigned long int) * 64)
+	{
 		return (-1);
-	hold = index;
-	for (i = 1; hold > 0; i *= 2, hold--)
-
-		if ((*n >> index) & 1)
-			*n -= i;
+	}
+	*n &= ~(1UL << index);
 
 	return (1);
 }
