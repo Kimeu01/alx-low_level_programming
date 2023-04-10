@@ -4,6 +4,7 @@
  * set_bit - sets value of a bit to 1 at an index
  * @n: decimal number passed by the pointer
  * @index: index position to change, starts from 0
+ * Description: a bit is set at an index
  *
  * Return: 1, if error return -1
  */
